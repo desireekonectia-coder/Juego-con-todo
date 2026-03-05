@@ -1,0 +1,66 @@
+/* Centrado total de la página */
+body {
+    background-color: #1a1a2e;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+
+/* Caja principal del juego */
+.contenedor {
+    background-color: #16213e;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    min-width: 400px;
+}
+
+/* Título más grande */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Marcador grande y claro */
+.marcador-box {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    background: #0f3460;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+/* Mensaje de resultado */
+.mensaje {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #e94560;
+    font-weight: bold;
+    height: 30px;
+}
+
+/* --- ESTO ES LO QUE FALTABA PARA LOS BOTONES --- */
+button {
+    font-size: 3rem; /* Hace que los emojis sean gigantes */
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1); /* Se agranda un poco al pasar el ratón */
+    background-color: #ffffff;
+    box-shadow: 0 0 20px #e94560;
+}

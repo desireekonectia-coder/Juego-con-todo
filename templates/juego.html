@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="contenedor"> 
+        <h1>🎮 Duelo vs Máquina</h1>
+        
+        <div class="marcador-box">
+            <div>👤 Tú: <span id="p-usuario">0</span></div>
+            <div>🤖 PC: <span id="p-maquina">0</span></div>
+        </div>
+
+        <div id="resultado" class="mensaje">¡Elige tu arma!</div>
+
+        <div class="botones">
+            <button onclick="jugar('piedra')">🪨</button>
+            <button onclick="jugar('papel')">📄</button>
+            <button onclick="jugar('tijera')">✂️</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
